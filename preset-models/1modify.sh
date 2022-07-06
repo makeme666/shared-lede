@@ -1,8 +1,8 @@
 #!/bin/sh
 #修改登录IP
-sed -i 's/192.168.1.1/192.168.31.1/g' package/base-files/files/bin/config_generate
+sed -i 's/192.168.1.1/192.168.1.1/g' package/base-files/files/bin/config_generate
 #修改主机名
-sed -i 's/OpenWrt/Xiaomi-Router/g' package/base-files/files/bin/config_generate
+sed -i 's/OpenWrt/Xiaomi-R4A/g' package/base-files/files/bin/config_generate
 #修改型号显示
 sed -i 's/Xiaomi Mi Router 4A Gigabit Edition/Xiaomi 4A Gigabit/g' target/linux/ramips/dts/mt7621_xiaomi_mi-router-4a-gigabit.dts
 sed -i 's/Xiaomi Mi Router 3G v2/Xiaomi 3G v2/g' target/linux/ramips/dts/mt7621_xiaomi_mi-router-3g-v2.dts
